@@ -95,8 +95,8 @@ function refresTable(tabla) {
 $(document).ready(function () {
 
     var e1 = new Estudiante("Fran", 20, "MCSD", 9);
-
     console.log(e1.mostrarDatosEstudiante());
+
     $("#tBtn").click(addTrabajador);
     $("#eBtn").click(addEstudiante);
 })
