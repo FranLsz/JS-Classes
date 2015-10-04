@@ -2,4 +2,72 @@
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    background-color: rgb(230, 230, 0);
 }
+
+.wrapper .trabajadoresBox {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.wrapper .estudiantesBox {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.wrapper .sectionTitle {
+    font-size: 75px;
+    padding-left: 20px;
+}
+
+.wrapper .addBox {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+    .wrapper .addBox h1 {
+        font-weight: normal;
+    }
+
+    .wrapper .addBox input[type=text] {
+        font-family: 'Raleway', sans-serif;
+        border: 0;
+        display: block;
+        margin: 30px;
+        padding: 10px;
+        width: 300px;
+        font-size: 20px;
+    }
+
+        .wrapper .addBox input[type=text]:focus {
+            outline: none;
+        }
+
+    .wrapper .addBox button {
+        font-family: 'Raleway', sans-serif;
+        border: 0;
+        padding: 10px;
+        background-color: white;
+        font-size: 25px;
+        margin-left: 255px;
+    }
+
+.wrapper .listBox {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+    .wrapper .listBox table thead tr th {
+        font-weight: normal;
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .wrapper .listBox table tbody tr td {
+        padding: 20px;
+        padding-left: 25px;
+    }

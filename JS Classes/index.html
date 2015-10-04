@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>JS Classes</title>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" />
@@ -10,8 +10,54 @@
 </head>
 <body>
     <div class="wrapper">
-
-
+        <div class="trabajadoresBox">
+            <div class="sectionTitle">Trabajadores</div>
+            <div class="addBox">
+                <h1>Nuevo trabajador</h1>
+                <input type="text" id="tNombre" placeholder="Nombre" />
+                <input type="text" id="tEdad" placeholder="Edad" />
+                <input type="text" id="tPuesto" placeholder="Puesto" />
+                <input type="text" id="tSalario" placeholder="Salario" />
+                <button type="button" id="tBtn">Añadir</button>
+            </div>
+            <div class="listBox">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Puesto</th>
+                            <th>Salario</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tContentZone"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="estudiantesBox">
+            <div class="sectionTitle">Estudiantes</div>
+            <div class="addBox">
+                <h1>Nuevo estudiante</h1>
+                <input type="text" id="eNombre" placeholder="Nombre" />
+                <input type="text" id="eEdad" placeholder="Edad" />
+                <input type="text" id="eCarrera" placeholder="Carrera   " />
+                <input type="text" id="eNota" placeholder="Nota" />
+                <button type="button" id="eBtn">Añadir</button>
+            </div>
+            <div class="listBox">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Carrera</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody id="eContentZone"></tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </body>
 </html>
