@@ -6,6 +6,9 @@ var estudiantes = [];
 function Persona(nombre, edad) {
     this.nombre = nombre || "Fran";
     this.edad = edad || 20;
+    this.mostrarDatos = function () {
+        return "Me llamo " + this.nombre + " y tengo " + this.edad + " años";
+    }
 }
 
 //clase Trabajador
@@ -22,7 +25,9 @@ function Estudiante(nombre, edad, carrera, nota) {
     this.nota = nota || "8";
 }
 
-//Trabajador hereda de Persona todas sus propiedades (incluso su constructor)
+
+
+//Trabajador hereda de Persona todas sus propiedades y funciones (incluso su constructor)
 Trabajador.prototype = new Persona;
 //por eso se sobreescribe el constructor heredado por el de Trabajador
 Trabajador.prototype.constructor = Trabajador;
@@ -30,6 +35,11 @@ Trabajador.prototype.constructor = Trabajador;
 //misma operacion pero con la clase Estudiante
 Estudiante.prototype = new Persona;
 Estudiante.prototype.constructor = Estudiante;
+
+//se añade una funcion a la clase Estudiante
+Estudiante.prototype.mostrarDatosEstudiante = function () {
+    return "Me llamo " + this.nombre + ", tengo " + this.edad + " años y estoy estudiando " + this.carrera + " con una calificación de " + this.nota;
+}
 
 function addTrabajador() {
     //obtencion de datos
@@ -84,9 +94,9 @@ function refresTable(tabla) {
 
 $(document).ready(function () {
 
+    var e1 = new Estudiante("Fran", 20, "MCSD", 9);
 
-    var est1 = new Estudiante("Fran", 20, "MCSD", 9);
-
+    console.log(e1.mostrarDatosEstudiante());
     $("#tBtn").click(addTrabajador);
     $("#eBtn").click(addEstudiante);
 })
